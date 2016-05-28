@@ -1,0 +1,249 @@
+.links a {
+    text-decoration: none;
+    color: white!important;
+}
+
+/*.navFixed ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navFixed li {
+    float: left;
+    position: relative;
+    right: -35%;
+    text-align: right;
+}
+
+.navFixed li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.navFixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+}
+.navFixed li a:hover:not(.active){
+
+    text-decoration: none;
+    border-bottom: 1px solid red;
+    height: 27px;
+}
+.navFixed .active {
+    text-decoration: none;
+    color: red;
+    border-bottom: none;
+    
+}*/
+
+/*.navbar{
+  opacity: 1.0;
+  position: fixed;
+  background-color: transparent;
+  background: transparent;
+  border-color: transparent;
+}*/
+
+body {
+  margin:0;
+  font-family: 'PT Sans';
+  background-color:lightblue;}
+
+.navbar{
+  opacity: 1.0;
+  /*position: fixed;*/
+  background-color: transparent;
+  background: transparent;
+  border-color: transparent;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(20,20,20,0.5);
+}
+
+ul.topnav li {
+  float: left;
+
+}
+
+ul.topnav li a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {
+  background-color: #111;
+}
+
+ul.topnav li.icon {display: none;}
+
+ul.topnav .active {
+    text-decoration: none;
+    color: red;
+    border-bottom: none;
+    
+}
+
+ul.topnav li a:hover:not(.active){
+
+    text-decoration: none;
+    border-bottom: 1px solid red;
+    height: 27px;
+
+}
+
+@media (max-width:768px) {
+  ul.topnav li:not(:nth-child(4)) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+    background-color: transparent;
+
+  }
+#imageReplace {
+    display: none;
+      }
+#scrollDown {
+    display: none;
+}
+
+ul.topnav .active {
+    text-decoration: none;
+    color: red;
+    border-bottom: none;
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width:768px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: right;
+    float: none;
+  }
+
+
+ul.topnav.responsive li .active{
+  display: none;
+}
+  ul.topnav li a:hover:not(.active){
+
+    text-decoration: none;
+    border-bottom: none;
+}
+
+}
+
+#links a:hover{
+  color: white;
+  font-weight: bolder;
+}
+
+.arrowdown{
+  text-align: center;
+  font-weight: bolder;
+  padding: 80px 100px;
+  font-size: 200%;
+} 
+
+.latestNews{
+  text-align: left;
+  font-weight: bolder;
+  font-size: 200%;
+}
+
+.news1{
+  font-size: 125%;
+}
+.navlink {
+    display: block;
+    color: white;
+    font-weight: bolder;
+
+}
+
+#imageReplace {
+    /*padding: 65px;*/
+    background-image: url('Chi1.jpg');
+    max-width: 100%;
+    margin: auto;
+    overflow: auto;
+    background-size: cover;
+    height: 700px;
+    -webkit-transition: all 1s ease; 
+    width: auto;
+}
+
+#imageInfo {
+    float: left;
+    margin: auto;
+}
+
+#imageTitle{
+    padding: 300px 0 0 50px;
+    color: white;
+}
+#imageCaption {
+    padding: 0 0 0 50px;
+    color: white;
+}
+#links {
+   
+    float: right;
+    margin: 10px;
+    list-style-type: none;
+    text-align: right;
+    padding: 10px;
+    color: white;
+    border-bottom: none;
+    position: relative;
+    top: 200px;
+}
+
+.currentlink{
+    color: white;
+    font-weight: bold;
+}
+
+.currentlink::after {
+    content: " - ";
+    color: red;
+}
+
+#pagewidth {
+  width:100%;
+}
+

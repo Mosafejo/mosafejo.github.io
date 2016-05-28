@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true">
+    <title>City of Chicago Website</title>
+
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="style1.css" rel="stylesheet"/>
+    <!-- <link href="style2.css" rel="stylesheet"/> -->
+
+<script type="text/javascript">
+	function changeImage(imageUrl, element, title, caption) {
+		$('#imageReplace').css('background-image', 'url(' + imageUrl + ')');
+    	$('.navlink').removeClass('currentlink');
+    	$(element).addClass('currentlink');
+    	$('#imageTitle').html(title);
+    	$('#imageCaption').html(caption);
+	}
+	</script>
+</head>
+<body>
+
+<!-- <nav class="nav"> -->
+<!-- <nav class ="navbar navbar-default navbar-fixed-top main-nav" role="navigation"> -->
+<div class ="navbar navbar-default navbar-fixed-top main-nav" role="navigation">
+<ul class="topnav">
+  <!-- <li><a class="active" href="#home">Home</a></li> -->
+  <li><a href=#></a></li>
+  <li><a class="about" href="http://www.cityofchicago.org/city/en/about.html">About</a></li>
+  <li><a class="serve" href="http://www.cityofchicago.org/city/en/svcs/find.html">Services</a></li>
+  <li><a class="active" href="http://www.cityofchicago.org/city/en.html">Chicago</a></li>
+  <li><a class="govt" href="http://www.cityofchicago.org/city/en/chicagogovt.html">Government</a></li>
+  <li><a class="pgm" href="http://www.cityofchicago.org/city/en/progs.html">Programs</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:20px;" onclick="myFunction()">Menu</a>
+  </li>
+</ul>
+<!-- </nav> -->
+</div>
+
+
+<script>
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+
+}
+</script>
+
+<div id="imageReplace">
+<div id="imageInfo">
+  <h1 id="imageTitle"></h1>
+  <!-- <h2 id="lineDiv">-</h2> -->
+  <h3 id="imageCaption"></h3>
+</div>
+<ul id="links">
+    <li><a href="#" onclick="changeImage('Chi1.jpg', this, 'Businesses in Chicago', '<i>Sales, trade, tourism, startups and techonology</i>')" class="navlink">Business</a></li>
+    <li><a href="#" onclick="changeImage('Cul2.jpg', this, 'City that values its people', '<i>There is always something to enjoy in the city</i>')" class="navlink">Culture & Recreation</a></li>
+    <li><a href="#" onclick="changeImage('Env1.jpg', this, 'Sustainable Chicago', '<i>The city is more livable, sustainable, and well planned</i>')" class="navlink">Environment</a></li>
+    <li><a href="#" onclick="changeImage('Dev.jpg', this, 'Urban Development', '<i>A new Chicago is built everyday</i>')" class="navlink">Housing & Development</a></li>
+    <li><a href="#" onclick="changeImage('Svc.jpg', this, 'Social Services', '<i>Helping people in need is the core value of the city</i>')" class="navlink">Social Services</a></li>
+    <li><a href="#" onclick="changeImage('Csvc1.jpg', this, 'Civil Services', '<i>Working together to build Chicago...</i>')" class="navlink">Civil Services</a></li>
+    <li><a href="#" onclick="changeImage('Chi4.jpg', this, 'Education', '<i>The city that provides quality education...</i>')" class="navlink">Education</a></li>
+    <li><a href="#" onclick="changeImage('Serv.jpg', this, 'City Health', '<i>Working to make the city healthier</i>')" class="navlink">Health</a></li>
+</ul>
+</div>
+
+  <div class="arrowdown">
+    <div id="scrollDown">
+      <p>Scroll to see News</p>
+        <span class="glyphicon glyphicon-arrow-down"></span>
+     </div>
+  </div>
+
+  <div class="latestNews">
+  <div id="news">
+  <p>News</p>
+  </div>
+  </div>
+
+    <article class="news1">
+      <div class="col-lg-4 col-sm-4">
+        <div class="thumbnail">
+          <h3><b>January 1, 2016</b></h3>
+          <img src="http://media.nbcbayarea.com/images/NYE+Chicago+rendering+2.jpg">
+        <p><b>CHICAGO</b> – Twenty-thousand people lined the Riverwalk for Chi-Town Rising. Instead of a ball dropping, there was a star rising. But the countdown was way off....</p>
+        </div>
+      </div>
+    </article>
+    <article class="news1">
+      <div class="col-lg-4 col-sm-4">
+        <div class="thumbnail">
+          <h3><b>February 14, 2016</b></h3>
+          <!-- <img src="http://media.nbcbayarea.com/images/NYE+Chicago+rendering+2.jpg"> -->
+          <img src="val.jpg" alt ="Valentine Day Proposal" style="width:85%;">
+        <p><b>CHICAGO</b> – Valentine’s Day is that amazing time of year when people in love take the time to celebrate that fact by showering each other with gifts, fancy dinners and, above all else, affection.</p>
+        </div>
+      </div>
+    </article>
+    <article class="news1">
+      <div class="col-lg-4 col-sm-4">
+        <div class="thumbnail">
+          <h3><b>March 1, 2016</b></h3>
+          <img src="http://media.nbcbayarea.com/images/NYE+Chicago+rendering+2.jpg">
+        <p>CHICAGO – Twenty-thousand people lined the Riverwalk for Chi-Town Rising. Instead of a ball dropping, there was a star rising. But the countdown was way off....</p>
+        </div>
+      </div>
+    </article>
+    <article class="news1">
+      <div class="col-lg-4 col-sm-4">
+        <div class="thumbnail">
+          <h3><b>May 16, 2016</b></h3>
+          <img src="http://www.airport-ohare.com/images/chicago-ohare-airport-inside.jpg">
+          <p>O’Hare Airport: Airline provides cots for travelers stuck on long TSA lines.</p>
+        </div> 
+      </div>
+    </article>
+    <article class="news1">
+      <div class="col-lg-4 col-sm-4">
+        <div class="thumbnail">
+          <h3><b>May 26, 2016</b></h3>
+          <img src="Race.jpg">
+        <p><b>CHICAGO</b> – J.P. Morgan Chase Corporate Challenge a record 27,000 people from 680 different companies filled Grant Park took part in the event.</p>
+        </div>
+      </div>
+    </article>
+    <article class="news1">
+      <div class="col-lg-4 col-sm-4">
+        <div class="thumbnail">
+          <h3><b>May 26, 2016</b></h3>
+          <video id="embedVideo"  width="100%" src="Blurry-Lights.mp4" controls></video>
+          <!-- <p>Mayor Rahm Emanuel today announced three new partners have joined the city’s Small Business Opportunity Centers (SBOC) program, which now features 11 centers throughout the city...</p>  -->
+        </div>
+      </div>
+    </article>
+
+</body>
+</html>
+
+
+<!-- http://www.w3schools.com/howto/howto_js_topnav.asp -->
